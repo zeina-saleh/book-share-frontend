@@ -217,13 +217,13 @@
     background-color: #FFFAFA;
     display: flex;
     padding: 32px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .class-card {
     height: 200px;
     width: 200px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .product-title {

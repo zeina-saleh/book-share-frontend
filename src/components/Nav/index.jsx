@@ -9,7 +9,6 @@ const Nav = ({handleOpenModal, handleOpenCalendarModal}) => {
             <div className="navbar-brand">Book Share</div>
             <ul className="navbar-list">
                 <li className="navbar-item" onClick={handleOpenModal}>Add Book</li>
-                {/* <li className="navbar-item" onClick={handleOpenCalendarModal}></li> */}
                 <li className="navbar-item">Logout</li>
             </ul>
         </nav>

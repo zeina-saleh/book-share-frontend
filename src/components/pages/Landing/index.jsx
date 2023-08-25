@@ -5,6 +5,7 @@ import "./style.css";
 import Nav from '../../Nav';
 import Modal from "react-modal";
 import BookCard from '../../BookCard';
+import AddBook from '../../AddBook';
 
 
 const Landing = () => {
@@ -34,14 +35,20 @@ const Landing = () => {
     <div>
       <Nav handleOpenModal={handleOpenModal} />
       <div className="book-list">
-        {books.map(book => (
-          <Link key={book._id} to={`/landing/${book._id}`}>
-            <BookCard book={book} />
-          </Link>
-        ))}
+        <div className='container'>
+          <div className="content">
+            {books.map(book => (
+              // <Link key={book._id} to={`/landing/${book._id}`}>
+              <BookCard book={book} />
+              
+              // </Link>
+            ))}
+          </div>
+        </div>
       </div>
       <Modal isOpen={openModal}
         onRequestClose={handleCloseModal}>
+        <AddBook handleCloseModal={handleCloseModal} />
       </Modal>
     </div>
   );
